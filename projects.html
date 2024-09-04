@@ -9,47 +9,6 @@
     <link rel="stylesheet" href="/css/inter.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-
-    <style>
-        .pt {
-            display: flex;
-            justify-content: space-evenly;
-            margin: 20px 0 0 0;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .ot {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgb(34, 34, 34);
-            height: 100px;
-            outline: solid 2px transparent;
-            outline-offset: 0px;
-            border-radius: 20px;
-            transition: outline-offset .1s ease .0s, outline-color .5s ease .2s;
-            width: 300px;
-            height: 250px;
-            box-shadow: 5px 5px 0 black;
-            text-decoration: none;
-            overflow: hidden;
-            /* padding: 5px; */
-        }
-
-        .ot:hover {
-            outline-color: rgb(235, 235, 235);
-            outline-offset: 5px;
-            transition: outline-offset .1s ease;
-        }
-
-        .ot,
-        .ot:hover,
-        .ot:visited,
-        .ot:active {
-            color: inherit;
-        }
-    </style>
 </head>
 
 <body>
@@ -72,14 +31,18 @@
 
         <section>
             <h1>Projects</h1>
-            <div class="pt">
-                <a class="ot" href="https://github.com/mithrilfire/Store-Management-App">
-                    <img style="border-radius: 20px 20px 0 0;" src="./img/sm-img.png" alt="Store Management">
-                    <h3>Store Management</h3>
+            <div class="project-container">
+                <a class="project-card" href="https://github.com/mithrilfire/Store-Management-App">
+                    <img src="./img/sm-img.png" alt="Store Management">
+                    <div>
+                        <h3>Store Management</h3>
+                    </div>
                 </a>
-                <a class="ot" href="./naval-siege.html">
-                    <img style="border-radius: 20px 20px 0 0;" src="./img/ns-img.png" alt="Naval Siege">
-                    <h3>Naval Siege</h3>
+                <a class="project-card" href="./naval-siege.html">
+                    <img src="./img/ns-img.png" alt="Naval Siege">
+                    <div>
+                        <h3>Naval Siege</h3>
+                    </div>
                 </a>
             </div>
         </section>

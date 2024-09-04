@@ -111,6 +111,61 @@ section a:hover {
     color: rgb(105, 200, 255);
 }
 
+.project-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 0 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    outline: solid 2px transparent;
+    outline-offset: 0px;
+    border-radius: 20px;
+    transition: outline-offset .1s ease .0s, outline-color .5s ease .2s;
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 0 rgb(10, 10, 10);
+    text-decoration: none;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 8px 8px 0 8px;
+}
+
+.project-card:hover {
+    outline-color: rgb(235, 235, 235);
+    outline-offset: 5px;
+    transition: outline-offset .1s ease;
+}
+
+.project-card img {
+    object-fit: cover;
+    /* border-radius: 20px 20px 0 0; */
+    border-radius: 20px;
+    height: 70%;
+    width: 100%;
+}
+
+.project-card div {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-card,
+.project-card:hover,
+.project-card:visited,
+.project-card:active {
+    color: inherit;
+}
+
 @media screen and (max-width: 44em) {
     .container {
         width: 100%;
