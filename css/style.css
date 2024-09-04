@@ -27,6 +27,11 @@ body {
     width: 694px;
 }
 
+.project-demo {
+    display: flex;
+    justify-content: center;
+}
+
 .maintitle {
     font-size: 2.5rem;
     font-weight: 300;
@@ -74,7 +79,7 @@ nav ul a {
 }
 
 header {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 nav a:not([active]):hover {
@@ -107,8 +112,9 @@ section a:hover {
 }
 
 @media screen and (max-width: 44em) {
-    body {
+    .container {
         width: 100%;
+        padding: 0 10px;
     }
 
     nav>div>div+* {
