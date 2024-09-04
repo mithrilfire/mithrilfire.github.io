@@ -1,19 +1,117 @@
-body {
-    background-color: rgb(20, 20, 20);
-    font-family: sans-serif;
-    color: aliceblue;
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+* {
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-.maindiv {
-    height: 100vh;
-    width: 70%;
-    margin: auto;
-    background-color: rgb(35, 36, 37);
-    max-height: 100vh;
-    overflow: auto;
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
 }
 
-.maindiv div {
-    padding: 5%;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 694px;
+}
+
+.maintitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.sectitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.titlesection {
+    margin-bottom: 1em;
+}
+
+nav a {
+    padding: 20px 0px 20px 0px;
+    color: gainsboro;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    transition: color .3s;
+}
+
+nav ul a {
+    padding: 0px 10px 0px 10px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* list-style-type: none; */
+}
+
+::selection {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+header {
+    margin-bottom: 4em;
+}
+
+nav a:not([active]):hover {
+    /* color: rgb(221, 255, 244); */
+    color: rgb(160, 160, 160);
+    text-decoration: underline solid;
+    text-underline-offset: 8px;
+}
+
+[active] {
+    color: aliceblue;
+    text-decoration: underline solid;
+    text-underline-offset: 8px;
+}
+
+section strong {
+    font-weight: bold;
+    color: rgb(255, 127, 127);
+}
+
+section a {
+    text-decoration: underline solid;
+    color: aliceblue;
+    text-underline-offset: 4px;
+    transition: color .2s;
+}
+
+section a:hover {
+    color: rgb(105, 200, 255);
+}
+
+@media screen and (max-width: 44em) {
+    body {
+        width: 100%;
+    }
+
+    nav>div>div+* {
+        display: none;
+    }
 }
