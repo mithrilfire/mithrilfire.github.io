@@ -14,17 +14,25 @@
     text-decoration: none;
 }
 
+/* html {
+    scrollbar-gutter: stable;
+} */
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: large;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(24, 24, 26);
     color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 694px;
+    /* width: 694px; */
+    width: 800px;
 }
 
 .project-demo {
@@ -79,7 +87,7 @@ nav ul a {
 }
 
 header {
-    margin-bottom: 2em;
+    background-color: rgb(17, 16, 18);
 }
 
 nav a:not([active]):hover {
@@ -97,18 +105,45 @@ nav a:not([active]):hover {
 
 section strong {
     font-weight: bold;
-    color: rgb(255, 127, 127);
+    color: #8dd0ff;
 }
 
 section a {
     text-decoration: underline solid;
-    color: aliceblue;
+    color: #03ffff;
     text-underline-offset: 4px;
     transition: color .2s;
 }
 
 section a:hover {
-    color: rgb(105, 200, 255);
+    color: #37b4b4;
+}
+
+footer {
+    color: hsl(0, 0%, 62%);
+    font-size: medium;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .2s;
+}
+
+footer a:hover {
+    color: hsl(0, 0%, 86%);
+    transition: color .2s;
+}
+
+.icon {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(62%) contrast(100%);
+}
+
+.icon:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(86%) contrast(100%);
 }
 
 .project-container {
